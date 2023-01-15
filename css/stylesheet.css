@@ -1,0 +1,290 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  background-color: #000000;
+  font-weight: bold;
+}
+.navbar{
+  width: 100%;
+	position: fixed;
+  z-index: 99;
+}
+.navbar ul{
+  list-style: none;
+  /* background: rgb(48, 48, 48); */
+  background: rgb(2, 0, 34);
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.navbar li{
+  display: inline-block;
+}
+.navbar a{
+  text-decoration: none;
+  color: rgb(119, 119, 119);
+  width: 100px;
+  display: block;
+  padding: 25px 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.navbar a:hover{
+  transform: scale(1.125);
+  color: rgb(185, 185, 185);
+}
+
+div#home{
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+}
+div#home-nombre {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  /* top: 400px; */
+  margin-top: 25%;
+  padding-inline: 4em;
+  padding-block: 2em;
+	color:white;
+  box-shadow: 0px 0px 2px 2px rgb(128, 66, 209);
+  background: rgb(0, 0, 0, 0.8);
+  text-align: center;
+}
+div#sobremi{
+  width: 60%;
+  margin: 10% auto 5% auto;
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (min-width: 0px) and (max-width: 850px) {
+  div#sobremi {
+    flex-direction: column;
+  }
+  div#home-nombre{
+    
+  margin-top: 115%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1280px) {
+  #galaxia{
+    display: none;
+  }
+}
+
+div.izquierda{
+  padding-top: 4em;
+  width: 100%;
+}
+
+.centrar{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+div.derecha{
+  padding: 1em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+.sobremi-derecha{
+  padding: 1em;
+  text-align: justify;
+}
+
+div#proyectos{
+  margin: -2% auto 5% auto;
+  padding-top: 5em;
+  padding: 2em;
+  display: flex;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1188px) {
+  div#proyectos {
+    flex-direction: column;
+  }
+  
+  div.proyecto img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+div.proyecto{
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.proyecto img{
+  width: 40%;
+  height: 60%;
+}
+div.proyecto h1{
+  display: flex;
+  justify-content: center;
+}
+
+button#volverArriba {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  background: transparent;
+  animation: aparicionBoton 1s ease;
+}
+button#volverArriba:hover {
+  transform: scale(1.125);
+  transition: all .2s ease-in-out;
+}
+
+#lenguajes{
+  width: 75%;
+  padding-inline: 1em;
+  margin: auto;
+  padding-bottom: 1em;
+}
+#lenguajes h1{
+  display: flex;
+  justify-content: center;
+}
+
+.lenguaje{
+  padding-bottom: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;  
+  justify-content: space-around;
+}
+.habilidades{
+  margin-top: 0;
+  padding: 2em;
+}
+
+.tarjeta{
+  background-color: #9b9b9b9d;
+  border-radius: 12px;
+  box-shadow: 0px 0px 15px 5px  rgb(37, 21, 112);
+  margin: 2em;
+  z-index: 2;
+}
+
+#estrellas{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 1px;
+  width: 1px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: -2;
+}
+
+#contacto{
+  margin: auto auto 10% auto;
+  padding: 1em;
+  margin-inline: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contacto h1{
+  display: flex;
+  justify-content: center;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 60%;
+} 
+
+form input, form textarea{
+  border-radius: 10px;
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  cursor: no-drop;
+
+}
+form .btnForm{
+  padding: 15px;
+  border-radius: 30px;
+  cursor: no-drop;
+}
+
+footer{
+  text-align: center;
+  color:white;
+  background-color: rgb(32, 18, 92);
+  padding: 10px;
+}
+.icon{
+filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(20deg) brightness(107%) contrast(101%);
+cursor: pointer;
+transition: all 0.3s;
+}
+.icon:hover{
+  transform: translateY(-10px);
+  filter: invert(96%) sepia(5%) saturate(18%) hue-rotate(329deg) brightness(78%) contrast(81%);
+}
+
+@keyframes aparicionBoton {
+  from{
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.floating{
+  animation-name: float;
+  animation-duration: 2.7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+
+@keyframes float {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 10px); }
+}
+
+
+#foto{
+  width: 80%;
+  height: 80%;
+}
+
+.proyectos-h1{
+  margin: 5% auto 5% auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-block: 1em;
+}

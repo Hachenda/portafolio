@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <div id="estrellas"></div>
+        <header>
+            <div>
+               <div class="navbar">
+                   <ul>
+                        <li><a href="#sobremi">Sobre mí</a></li>
+                        <li><a href="#lenguajes">Lenguajes</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div id="home">
+            <div class="floating">
+                <div id="home-nombre">
+                    <h1>David Hernández Larrea</h1>
+                    <hr>
+                    <p>Desarrollador de aplicaciones web</p>
+                </div>
+            </div>
+            <img src="src/galaxia (1).png" id="galaxia">
+        </div>
+        <div id="sobremi" class="tarjeta">
+            <div class="izquierda">
+                <img src="src/default_profile_400x400.png" class="centrar" id="foto">
+            </div>
+            <div class="derecha">
+                <h1 class="sobremi-derecha">Sobre mí</h1>
+                <p class="sobremi-derecha">Programador en formación tanto de backend como frontend. Actualmente estoy en 2º en un curso de Desarrollo de aplicaciones web. </p>
+                <p class="sobremi-derecha">Desde que era pequeño me apasionaba el mundo de la tecnología y la informática. Dedicaba tiempo libre en hacer páginas web y aplicaciones para móvil por mi propia cuenta e incluso llegué a crear videojuegos algo simples. Es por ello que decidí enfocar mis estudios a este campo, para poder llegar a disfrutar de mi trabajo y ser capaz de demostrar mis habilidades al mundo exterior.</p>
+            </div>
+        </div>
+        <div id="lenguajes" class="tarjeta">
+            <h1 class="habilidades centrar">Mis habilidades y lenguajes</h1>
+            <h2 class="centrar">Frontend</h2>
+            <div id="frontend" class="lenguaje">
+                <img src="src/html5-logo.png" width="100" height="100" title="HTML5">
+                <img src="src/css3-logo.png" width="100" height="100" title="CSS3">
+                <img src="src/js-logo.png" width="100" height="100" title="JavaScript">
+            </div>
+            <h2 class="centrar">Backend</h2>
+            <div id="backend" class="lenguaje">
+                <img src="src/php-logo.png" width="100" height="100" title="PHP">
+                <img src="src/sql-logo.png" width="100" height="100" title="SQL">
+                <img src="src/java-logo.png" width="100" height="100" title="Java">
+            </div>
+            <h2 class="centrar">Otros</h2>
+            <div id="otros" class="lenguaje">
+                <img src="src/photoshop-logo.png" width="100" height="100" title="Photoshop">
+                <img src="src/wordpress-logo.png" width="100" height="100" title="Wordpress">
+            </div>
+        </div>
+        <h1 class="proyectos-h1 tarjeta">Proyectos</h1>
+        <div id="proyectos">
+            <div class="proyecto tarjeta">
+                <img src="src/default_profile_400x400.png" class="centrar">
+                <h1 class="centrar">GExpenses</h1>
+                <p class="centrar"><i>Hecho con HTML5, CSS3, PHP y JS.</i></p>
+            </div>
+            <div class="proyecto tarjeta">
+                <img src="src/default_profile_400x400.png" class="centrar">
+                <h1 class="centrar">eeMindful</h1>
+                <p class="centrar"><i>Hecho con wordpress</i></p>
+            </div>
+            <div class="proyecto tarjeta">
+                <img src="src/default_profile_400x400.png" class="centrar">
+                <h1 class="centrar">Holzadac</h1>
+                <p class="centrar"><i>Hecho con wordpress</i></p>
+            </div>
+        </div>
+        <div id="contacto" class="tarjeta">
+            <form>
+                <h1>Contacto</h1>
+                <input type="text" rows="1"id="nombre" placeholder="Nombre" disabled>
+                <input type="email" rows="1" id="email" placeholder="Email" disabled>
+                <textarea id="mensaje" rows="4" placeholder="Escribe aquí tu mensaje." disabled></textarea>
+                    <button class="btnForm" type="submit" disabled>Enviar</button>
+
+            </form>
+        </div>
+        <footer>
+            <p>Hecho con: HTML5, CSS3 y Javascript</p>
+            <p>Por: David Hernández Larrea</p>
+            <a href="https://www.linkedin.com/in/david-hernandez-larrea/" target="_blank"><img class="icon" src="src/icon-linkedin.png"></a>
+            <a href="https://github.com/Hachenda" target="_blank"><img class="icon" src="src/icon-github.png"></a>
+            <a href="mailto:dhernandezla0@gmail.com"><img class="icon" src="src/icon-gmail.png"></a>
+        </footer>
+        <button onclick="volverArriba()" id="volverArriba" title="Volver a arriba de la página"><img src="src/2883482.png" width="75" height="75"></button>
+    <script src="js/script.js"></script>
+    </body>
+</html>
