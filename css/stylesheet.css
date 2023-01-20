@@ -63,7 +63,8 @@ div#home-nombre {
   text-align: center;
 }
 div#sobremi{
-  width: 60%;
+  width: 90%;
+  padding-top: 10%;
   margin: 10% auto 5% auto;
   display: flex;
   flex-direction: row;
@@ -72,8 +73,12 @@ div#sobremi{
   div#sobremi {
     flex-direction: column;
   }
-  div#home-nombre{
-    
+  
+#foto{
+  width: 80%;
+  height: 80%;
+}
+  div#home-nombre{   
   margin-top: 115%;
   }
 }
@@ -86,7 +91,6 @@ div#sobremi{
 
 div.izquierda{
   padding-top: 4em;
-  width: 100%;
 }
 
 .centrar{
@@ -108,7 +112,6 @@ div.derecha{
 div#proyectos{
   margin: -2% auto 5% auto;
   padding-top: 5em;
-  padding: 2em;
   display: flex;
 }
 
@@ -124,14 +127,13 @@ div#proyectos{
 }
 
 div.proyecto{
-  padding: 2em;
   margin-left: auto;
   margin-right: auto;
 }
 
 div.proyecto img{
-  width: 40%;
-  height: 60%;
+  width: 80%;
+  height: 80%;
 }
 div.proyecto h1{
   display: flex;
@@ -181,8 +183,9 @@ button#volverArriba:hover {
   padding: 2em;
 }
 
-.tarjeta{
-  background-color: #9b9b9b9d;
+#tarjeta{
+  background-color: #c4c4c4;
+  opacity: 0.9;
   border-radius: 12px;
   box-shadow: 0px 0px 15px 5px  rgb(37, 21, 112);
   margin: 2em;
@@ -201,7 +204,6 @@ button#volverArriba:hover {
 }
 
 #contacto{
-  margin: auto auto 10% auto;
   padding: 1em;
   margin-inline: 20%;
   display: flex;
@@ -276,13 +278,7 @@ transition: all 0.3s;
 }
 
 
-#foto{
-  width: 80%;
-  height: 80%;
-}
-
 .proyectos-h1{
-  margin: 5% auto 5% auto;
   text-align: center;
   margin-left: auto;
   margin-right: auto;

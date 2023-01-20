@@ -44,11 +44,6 @@ function randomizeImg(galaxia) {
   }else{
     galaxia.style.top = numRandom(50,60) + "%";
   }
-  if(numRandom(10,20) % 2 == 0){
-    galaxia.style.left = numRandom(-12,-2) + "%"; // -12 a -2, 49 a 55
-  }else{
-    galaxia.style.left = numRandom(49,55) + "%";
-  }
 }
 
 let galaxia = document.getElementById("galaxia");
